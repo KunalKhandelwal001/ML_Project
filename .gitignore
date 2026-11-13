@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Raw data: never commit patient-level records.
+data/*.csv
+data/*.xlsx
+!data/README.md
+
+# Generated results. Keep only the final summary CSV in version control.
+results/*
+!results/.gitkeep
+!results/summary.csv
+
+# Model artefacts and local logs
+*.joblib
+*.pkl
+*.log
+
+# Streamlit secrets
+.streamlit/secrets.toml
